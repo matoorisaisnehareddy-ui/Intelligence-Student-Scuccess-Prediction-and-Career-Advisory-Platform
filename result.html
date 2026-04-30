@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Result</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- 🔴 TOP RIGHT LOGOUT -->
+<div class="top-bar">
+  <a href="/logout">
+    <button type="button">Logout</button>
+  </a>
+</div>
+
+<div class="container">
+  <h2>📊 Prediction Result</h2>
+
+  <div class="result-box">
+    <h3>
+      Success Level:
+      <span class="
+        {% if result == 'High' %}success-high
+        {% elif result == 'Medium' %}success-medium
+        {% else %}success-low{% endif %}
+      ">
+        {{ result }}
+      </span>
+    </h3>
+  </div>
+
+  <form action="/careers" method="POST">
+    <input type="hidden" name="result" value="{{ result }}">
+    <button type="submit">View Career Recommendations</button>
+  </form>
+
+  <br>
+
+
+
+</div>
+
+</body>
+</html>
