@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Success AI</title>
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BACKGROUND */
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background: linear-gradient(135deg,#e1a203,#c337c1);
+color:white;
+}
+
+/* MAIN CONTAINER */
+.container{
+text-align:center;
+max-width:600px;
+padding:40px;
+animation: fadeIn 1s ease-in-out;
+}
+
+/* TITLE */
+h1{
+font-size:40px;
+margin-bottom:15px;
+}
+
+/* TAGLINE */
+p{
+font-size:18px;
+opacity:0.9;
+margin-bottom:25px;
+line-height:1.6;
+}
+
+/* BUTTON */
+button{
+padding:14px 30px;
+font-size:16px;
+border:none;
+border-radius:30px;
+background: linear-gradient(to right,#00c6ff,#0072ff);
+color:white;
+cursor:pointer;
+transition:0.3s;
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+button:hover{
+transform: translateY(-3px) scale(1.05);
+background: linear-gradient(to right,#0072ff,#0057cc);
+}
+
+/* FEATURES SECTION */
+.features{
+margin-top:40px;
+display:flex;
+justify-content:space-around;
+flex-wrap:wrap;
+}
+
+.feature{
+width:160px;
+margin:10px;
+padding:15px;
+background: rgba(255,255,255,0.1);
+border-radius:10px;
+transition:0.3s;
+}
+
+.feature:hover{
+background: rgba(255,255,255,0.2);
+transform: translateY(-5px);
+}
+
+.feature h3{
+font-size:18px;
+margin-bottom:5px;
+}
+
+.feature p{
+font-size:13px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>🎓 Student Success AI</h1>
+
+  <p>
+   ⚡ Know where you stand. Know where to go.
+  </p>
+
+  <a href="/login">
+    <button>🚀 Get Started</button>
+  </a>
+
+  <!-- FEATURES -->
+  <div class="features">
+
+    <div class="feature">
+      <h3>📊 Smart Analysis</h3>
+      <p>AI-based performance prediction</p>
+    </div>
+
+    <div class="feature">
+      <h3>🎯 Career Guide</h3>
+      <p>Personalized career suggestions</p>
+    </div>
+
+    <div class="feature">
+      <h3>⚡ Fast Results</h3>
+      <p>Instant insights in seconds</p>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
