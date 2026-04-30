@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Careers</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- 🔴 TOP RIGHT LOGOUT -->
+<div class="top-bar">
+  <a href="/logout">
+    <button type="button">Logout</button>
+  </a>
+</div>
+
+<div class="container">
+  <h2>🎯 Career Recommendations</h2>
+
+  <ul>
+    {% for c in careers %}
+      <li>{{ c }}</li>
+    {% endfor %}
+  </ul>
+
+  <br>
+  <a href="/analytics">
+    <button type="button">📊 View Analytics</button>
+  </a>
+
+</div>
+
+</body>
+</html>
