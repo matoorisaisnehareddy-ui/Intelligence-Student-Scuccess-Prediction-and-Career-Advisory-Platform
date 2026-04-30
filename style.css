@@ -1,0 +1,161 @@
+/* GLOBAL */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #dbe9ee, #c9d6ff);
+  margin: 0;
+  padding: 0;
+}
+
+/* MAIN CONTAINER */
+.container {
+  width: 420px;
+  margin: 60px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* HEADINGS */
+h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+h3 {
+  color: #0072ff;
+}
+
+/* INPUT */
+input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #0072ff;
+  box-shadow: 0 0 5px rgba(0,114,255,0.3);
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  color: white;
+  border: none;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(to right, #0057cc, #0099cc);
+  transform: scale(1.03);
+}
+
+/* RESULT BOX */
+.result-box {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f4f8ff;
+  border-left: 5px solid #0072ff;
+}
+
+/* SUCCESS COLORS */
+.success-high {
+  color: green;
+  font-weight: bold;
+}
+
+.success-medium {
+  color: orange;
+  font-weight: bold;
+}
+
+.success-low {
+  color: red;
+  font-weight: bold;
+}
+
+/* CAREER LIST */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #f1f5ff;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+ul li:hover {
+  background: #dbe4ff;
+  transform: translateX(5px);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* TOP RIGHT LOGOUT BUTTON */
+.top-bar {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+}
+
+/* BUTTON STYLE */
+.top-bar button {
+  width: auto;
+  padding: 20px 30px;           /* bigger size */
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;          /* pill shape */
+  cursor: pointer;
+
+  /* Gradient look */
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+
+  /* Shadow for depth */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+
+  /* Smooth animation */
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.top-bar button:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
+
+/* CLICK EFFECT */
+.top-bar button:active {
+  transform: scale(0.95);
+}
