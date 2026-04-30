@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Analytics</title>
+  <link rel="stylesheet" href="/static/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+  <h2>📊 Analytics Dashboard</h2>
+
+  <canvas id="chart"></canvas>
+
+  <br><br>
+
+  <a href="/logout">
+    <button>Logout</button>
+  </a>
+</div>
+
+<script>
+const labels = {{ labels | tojson }};
+const values = {{ values | tojson }};
+
+new Chart(document.getElementById("chart"), {
+  type: "bar",
+  data: {
+    labels: labels,
+    datasets: [{
+      label: "Student Count",
+      data: values
+    }]
+  }
+});
+</script>
+
+</body>
+</html>
